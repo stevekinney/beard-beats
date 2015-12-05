@@ -1,11 +1,3 @@
 <p>This is the <code>artists/artist/index</code> template.</p>
 
-<ul>
-{{#each model.albums as |album|}}
-  <li>
-    {{#link-to 'artists.artist.albums.album' album}}
-      {{album.title}} ({{album.year}})
-    {{/link-to}}
-  </li>
-{{/each}}
-</ul>
+{{#link-to 'artists.artist.albums' model}}Albums &rarr;{{/link-to}}
